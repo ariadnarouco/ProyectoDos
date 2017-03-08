@@ -1,1 +1,159 @@
 <!-- Comment for the second project-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>	
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<header>
+			<!--solo puede haber un h1 por cada una de las páginas (no se tiene que repentir en una misma página) y va a regir por sobre las búsquedas-->
+			<h1>Mi primer sitio</h1>
+			<h4>Aprendiendo HTML5</h4>
+			<p>
+				Este es mi primer parrafo en mi primer sitio web.
+			</p>
+			<a href="https://www.google.com.ar" >Ir a google</a>
+		</header>
+		<section>
+			<!-- Al buscandor le estoy generando un problema si pongo más ded un tipo de heading en la página -->
+			<article>
+				<h2>Elemento 1</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="https://www.google.com.ar/?gfe_rd=cr&ei=bz-_WOW5LYmgxgT71YL4Bg&gws_rd=ssl">
+					<img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2015/02/icon_HouseHeart_red_750x5002.png">
+				</a>
+				<button>Elemento 1</button>
+				<hr>
+			</article>
+			<article>
+				<h2>Elemento 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="https://www.google.com.ar/?gfe_rd=cr&ei=bz-_WOW5LYmgxgT71YL4Bg&gws_rd=ssl">
+					<img src="http://www.in-pack.com.mx/images/cajas_empaque_inpack.png">
+				</a>	
+				<button>Elemento 2</button>
+				<hr>
+			</article>
+			<article>
+				<h2>Elemento 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="https://www.google.com.ar/?gfe_rd=cr&ei=bz-_WOW5LYmgxgT71YL4Bg&gws_rd=ssl">
+					<img src="http://es.seaicons.com/wp-content/uploads/2015/11/Contact-icon2.png">
+				</a>
+				<button>Elemento 3</button>
+				<hr>
+			</article>
+			<article>
+				<table>
+					<tr>
+						<th>Nombre</th>
+						<th>Nota 1</th>
+						<th>Nota 2</th>
+						<th>Promedio</th>
+					</tr>
+					<tr>
+						<td>Daniela</td>
+						<td>9</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Laura</td>
+						<td>4</td>
+						<td>5</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>Simón</td>
+						<td>4</td>
+						<td>5</td>
+						<td>5</td>
+					</tr>
+				</table>
+			</article>
+		</section>
+		<section>
+			<h4>Formulario de contacto</h4>
+			<!-- Post los evía sin que el usuario se de cuenta -->
+			<!-- Get Pasa parámetros  -->
+			<form method="POST" action="enviar.php" enctype="multipart/form-data">
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" placeholder="Escribí tu nombre" required="true">
+				<br>
+				<br>
+				<label for="email">Email:</label>
+				<input type="email" name="email" placeholder="Escribí tu email" required="true">
+				<br>
+				<br>
+				<label for="password">Password:</label>
+				<input type="password" name="password" placeholder="Escribi tu contrasena" required="true">
+				<br>
+
+				<label>Provincia</label>
+				<select>
+					<option selected="true" value="BuenosAires">Buenos Aires</option>
+					<option value="SantaFe">Santa fé</option>
+					<option value="Cordoba">Córdoba</option>
+					<option value="Misiones">Misiones</option>
+					<option value="Jujy">Jujy</option>
+					<option value="Salta">Salta</option>
+					<option value="Formosa">Formosa</option>
+					<option value="Chaco">Chaco</option>
+					<option value="Corrientes">Corrientes</option>
+				</select>
+				<br>
+				<input type="checkbox" name="terminos" value="unit-in-group" required="true" />Aceptar Términos y condiciones
+				<br>
+				<br>
+				<br>
+				<label>Entrega de pedido</label>
+				<br>
+				<input type="radio" name="entrega" value="delivery">Delivery<br>
+  				<input type="radio" name="entrega" value="local"> Retira por el local<br>
+  				<br>
+  				<label for="comentarioEntrega">Comentarios de entrega</label>
+  				<br>
+  				<textarea name="comentarioEntrega" placeholder="Inserte su comentario aquí" style="resize:none" >
+  				</textarea>
+  				<br>
+  				<br>
+  				<label for="pic">Subir un archivo</label>
+  				<input type="file" name="pic" accept="image/*">
+  				<br>
+  				<br>
+  				<video width="400" controls>
+				  <source src="mov_bbb.mp4" type="video/mp4">
+				  <source src="mov_bbb.ogg" type="video/ogg">
+				  Your browser does not support HTML5 video.
+				</video>
+				<input type="submit" name="Enviar">
+			</form>
+		</section>
+
+	</body>
+</html>
